@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matías Bustos Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Matías Bustos - Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">About Me</h2>
+        <p class="lead">A video game developer with experience in Unity and Unreal Engine, specializing in object-oriented 
+            programming and with a strong focus on developing virtual reality (VR) experiences. I stand out for my ability 
+            to collaborate effectively in multidisciplinary teams, as well as for my autonomy and proactivity in independent 
+            work. I am responsible, organized, and adaptable to different work environments, always committed to punctuality 
+            and quality in every project. Beyond my professional life, I have been passionate about video games since I was 
+            little, and I enjoy both creating and playing, combining technological innovation with a traditional approach to 
+            the games that shaped my childhood.</p>
+        <p class="lead">Engineer in Game Development and Virtual Reality from Universidad de Talca. Completed an international 
+            internship in Game Design and Development at Universitat de Girona. Passionate about immersive technologies and 
+            creating meaningful interactive experiences.</p>
+    </div>
+</section>
+
+
+<script>
+    const unityIconUrl = "https://www.dockhunt.com/_next/image?url=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2F22ba1538-2cb9-4cc4-a73e-80fdcce62e33&w=256&q=75";
+
+    document.getElementById("unityIconContainer").innerHTML = `
+        <img src="${unityIconUrl}" alt="Unity" title="Unity" style="height: 32px;">
+    `;
+</script>
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Projects Portfolio</h2>
+        <div class="row g-4">
+
+            <!-- Project: VR Simulator -->
+            <div class="col-md-4">
+                <div class="card h-100 zoom-card" data-bs-toggle="modal" data-bs-target="#modalVR">
+                    <div class="card-body" >
+                        <h5 class="card-title text-center">VR Simulator for Firefighters</h5>
+                        <h6 class="card-text text-center">[Aug 2023 - Sep 2024]</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="Images/Thesis/Thesis1.jpg" class="d-block w-100 carousel-img" alt="Image 1" style="object-fit: cover; scale: 0.8">
+                        </div>
+                        <h6 class="card-text text-center">Final thesis project at Universidad de Talca.</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="https://img.icons8.com/color/48/unity.png" alt="Unity" title="Unity" style="height: 32px;">
+                            <img src="https://img.icons8.com/color/48/blender-3d.png" alt="Blender" title="Blender" style="height: 32px;">
+                            <img src="https://img.icons8.com/?size=100&id=13677&format=png&color=000000" alt="Photoshop" title="Photoshop" style="height: 32px;">
+                            <img src="https://www.dockhunt.com/_next/image?url=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2F22ba1538-2cb9-4cc4-a73e-80fdcce62e33&w=256&q=75" alt="Unity" title="Unity" style="height: 32px;">
+                            <img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000" alt="Blender" title="Blender" style="height: 32px;">
+                            <img src="https://img.icons8.com/?size=100&id=UE01mCLFBOl4&format=png&color=000000" alt="Photoshop" title="Photoshop" style="height: 32px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project: Little League -->
+            <div class="col-md-4">
+                <div class="card h-100 zoom-card" data-bs-toggle="modal" data-bs-target="#modalLLWS">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Little League World Series Baseball 2022</h5>
+                        <h6 class="card-text text-center">[Jan 2022]</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="Images/llwsb/llwsb.png" class="d-block w-100 carousel-img" alt="Image 1" style="object-fit: cover; scale: 0.8">
+                        </div>
+                        <h6 class="card-text text-center">Pre-professional internship at IguanaBee.</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="https://img.icons8.com/color/48/unreal-engine.png" alt="Unreal Engine" height="40">
+                            <img src="https://img.icons8.com/?size=100&id=UE01mCLFBOl4&format=png&color=000000" alt="Rider (placeholder)" height="40">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project: BubbleStress -->
+            <div class="col-md-4">
+                <div class="card h-100 zoom-card" data-bs-toggle="modal" data-bs-target="#modalBubbleStress">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">BubbleStress</h5>
+                        <h6 class="card-text text-center">[Jan 2025]</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="Images/bubble/bubble1.png" class="d-block w-100 carousel-img" alt="Image 1" style="object-fit: cover; scale: 0.8">
+                        </div>
+                        <h6 class="card-text text-center">Global Game Jam 2025.</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="https://img.icons8.com/color/48/unity.png" alt="Unity" title="Unity" style="height: 32px;">
+                            <img src="https://img.icons8.com/?size=100&id=UE01mCLFBOl4&format=png&color=000000" alt="Rider (placeholder)" height="40">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project: City Road -->
+            <div class="col-md-4">
+                <div class="card h-100 zoom-card" data-bs-toggle="modal" data-bs-target="#modalCityRoad">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">City Road</h5>
+                        <h6 class="card-text text-center">[May 2021]</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="Images/Road/road1.png" class="d-block w-100 carousel-img" alt="Image 1" style="object-fit: cover; scale: 0.8">
+                        </div>
+                        <h6 class="card-text text-center">Universidad de Talca.</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="https://img.icons8.com/color/48/unreal-engine.png" alt="Unreal Engine" height="40">
+                            <img src="https://img.icons8.com/color/48/blender-3d.png" alt="Blender" title="Blender" style="height: 32px;">
+                            <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" height="40">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project: Elemental Change -->
+            <div class="col-md-4">
+                <div class="card h-100 zoom-card" data-bs-toggle="modal" data-bs-target="#modalElemental">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Elemental Change</h5>
+                        <h6 class="card-text text-center">[Mar 2022 - Jul 2022]</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="Images/EC/EC1.png" class="d-block w-100 carousel-img" alt="Image 1" style="object-fit: cover; scale: 0.8">
+                        </div>
+                        <h6 class="card-text text-center">Universidad de Talca.</h6>
+                        <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                            <img src="https://img.icons8.com/color/48/unreal-engine.png" alt="Unreal Engine" height="40">
+                            <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" height="40">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MODALS -->
+
+<!-- VR Simulator Modal -->
+<div class="modal fade" id="modalVR" tabindex="-1" aria-labelledby="modalVRLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalVRLabel">VR Simulator for Firefighters</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>This project involved the development of an immersive virtual reality simulator aimed at training 
+                    firefighters in emergency response involving hazardous materials, based on the content of the PRIMAP 
+                    (First Response to Incidents with Hazardous Materials) course. The objective was to provide a safe and 
+                    realistic training tool that would allow users to face critical situations and make key decisions under 
+                    simulated high-pressure conditions. My involvement included both the pedagogical design and technical 
+                    development of the simulator, integrating interactive scenarios that guide the user through different 
+                    stages of the intervention procedure, with immediate feedback based on their choices. To this end, I 
+                    worked closely with staff from the Technical Development Department of the Chilean National Fire Academy, 
+                    which ensured the accuracy of the content. I also modeled and integrated 3D assets representative of 
+                    industrial environments and elements of response equipment. The simulator was tested with firefighters 
+                    from real firefighting companies in Talca and San Rafael, validating its usability and relevance as a 
+                    complementary resource in professional training.
+                </p>
+                <div id="thesisCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/Thesis/Thesis1.jpg" class="d-block w-100 carousel-img" alt="Slide 1" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Thesis/Thesis2.jpg" class="d-block w-100 carousel-img" alt="Slide 2" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Thesis/Thesis3.jpg" class="d-block w-100 carousel-img" alt="Slide 3" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Thesis/Thesis4.jpg" class="d-block w-100 carousel-img" alt="Slide 4" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Thesis/Thesis5.jpg" class="d-block w-100 carousel-img" alt="Slide 5" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Thesis/Thesis6.jpg" class="d-block w-100 carousel-img" alt="Slide 6" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Thesis/Thesis7.jpg" class="d-block w-100 carousel-img" alt="Slide 7" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Thesis/Thesis8.jpg" class="d-block w-100 carousel-img" alt="Slide 8" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Thesis/Thesis9.jpg" class="d-block w-100 carousel-img" alt="Slide 9" style="height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#thesisCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#thesisCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                    <p></p>
+                    <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                        <img src="https://img.icons8.com/color/48/unity.png" alt="Unity" title="Unity" style="height: 32px;">
+                        <img src="https://img.icons8.com/color/48/blender-3d.png" alt="Blender" title="Blender" style="height: 32px;">
+                        <img src="https://img.icons8.com/?size=100&id=13677&format=png&color=000000" alt="Photoshop" title="Photoshop" style="height: 32px;">
+                        <img src="https://www.dockhunt.com/_next/image?url=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2F22ba1538-2cb9-4cc4-a73e-80fdcce62e33&w=256&q=75" alt="Unity" title="Unity" style="height: 32px;">
+                        <img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000" alt="Blender" title="Blender" style="height: 32px;">
+                        <img src="https://img.icons8.com/?size=100&id=UE01mCLFBOl4&format=png&color=000000" alt="Photoshop" title="Photoshop" style="height: 32px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Little League Modal -->
+<div class="modal fade" id="modalLLWS" tabindex="-1" aria-labelledby="modalLLWSLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLLWSLabel">Little League World Series Baseball 2022</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>During my internship at the video game development studio IguanaBee, I was part of the development 
+                    team for the multiplatform Little League World Series Baseball 2022 video game, published for Nintendo 
+                    Switch, PlayStation, and Xbox. I served as an interface and navigation programmer, working on the 
+                    creation and adjustment of interactive menus, configuration screens, player profiles, and navigation 
+                    flows between different sections of the game. I primarily used Blueprints and C++ within Unreal Engine 
+                    4 to implement the navigation logic and ensure a fluid, consistent, and console-optimized user 
+                    experience. This experience allowed me to work in a professional environment under agile methodologies, 
+                    actively participate in code reviews, and collaborate with multidisciplinary teams on a project with 
+                    international production standards.</p>
+                <div id="llwsbCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/llwsb/llwsb.png" class="d-block w-100 carousel-img" alt="Slide 1" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/llwsb/llwsb2.png" class="d-block w-100 carousel-img" alt="Slide 2" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/llwsb/llwsb3.png" class="d-block w-100 carousel-img" alt="Slide 3" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/llwsb/llwsb4.png" class="d-block w-100 carousel-img" alt="Slide 4" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/llwsb/llwsb5.png" class="d-block w-100 carousel-img" alt="Slide 5" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/llwsb/llwsb6.png" class="d-block w-100 carousel-img" alt="Slide 6" style="height: 400px; object-fit: fill;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#llwsbCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#llwsbCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                    <p></p>
+                    <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                        <img src="https://img.icons8.com/color/48/unreal-engine.png" alt="Unreal Engine" height="40">
+                        <img src="https://img.icons8.com/?size=100&id=UE01mCLFBOl4&format=png&color=000000" alt="Rider (placeholder)" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BubbleStress Modal -->
+<div class="modal fade" id="modalBubbleStress" tabindex="-1" aria-labelledby="modalBubbleStressLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalBubbleStressLabel">BubbleStress</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>BubbleStress was developed during the Global Game Jam 2025, which had the theme "bubbles." The game 
+                    offers a playful and sensorial experience in which the player takes on the role of a stressed office 
+                    worker who must correctly type the letters that appear on the screen. The distinctive feature of the 
+                    gameplay is that the keyboard simulates a pop-up, combining fast-typing mechanics with elements of 
+                    relaxation and visual and audio satisfaction. As lead programmer, I was responsible for the design 
+                    and implementation of the core game logic, including letter-pressed detection, real-time reaction 
+                    mechanics, the scoring system, and the integration of visual and auditory feedback. I also optimized 
+                    the overall game flow and collaborated on design iterations to ensure an intuitive and entertaining 
+                    experience.</p>
+                <div id="bubbleCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/bubble/bubble1.png" class="d-block w-100 carousel-img" alt="Slide 1" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/bubble/bubble2.png" class="d-block w-100 carousel-img" alt="Slide 2" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/bubble/bubble3.png" class="d-block w-100 carousel-img" alt="Slide 3" style="height: 400px; object-fit: fill;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#bubbleCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#bubbleCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                    <p></p>
+                    <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                        <img src="https://img.icons8.com/color/48/unity.png" alt="Unity" title="Unity" style="height: 32px;">
+                        <img src="https://img.icons8.com/?size=100&id=UE01mCLFBOl4&format=png&color=000000" alt="Rider (placeholder)" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- City Road Modal -->
+<div class="modal fade" id="modalCityRoad" tabindex="-1" aria-labelledby="modalCityRoadLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCityRoadLabel">City Road</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>City Road is a runner game developed individually as part of an academic project. The player must 
+                    navigate a city on one of three lanes, dodging obstacles and facing a final boss battle, combining 
+                    classic endless runner mechanics with a combat section. I served as the lead programmer, responsible 
+                    for all game development, including the lane-switching system, boss battle logic, and the overall 
+                    gameplay flow. I used openly licensed online assets to complement the project's visual and audio 
+                    aspects. This work allowed me to integrate different systems within Unreal and consolidate my planning, 
+                    programming, and game design skills independently.</p>
+                <div id="roadCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/Road/road1.png" class="d-block w-100 carousel-img" alt="Slide 1" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Road/road2.png" class="d-block w-100 carousel-img" alt="Slide 2" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Road/road3.png" class="d-block w-100 carousel-img" alt="Slide 3" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Road/road4.png" class="d-block w-100 carousel-img" alt="Slide 4" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Road/road5.png" class="d-block w-100 carousel-img" alt="Slide 5" style="height: 400px; object-fit: fill;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#roadCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#roadCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                    <p></p>
+                    <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                        <img src="https://img.icons8.com/color/48/unreal-engine.png" alt="Unreal Engine" height="40">
+                        <img src="https://img.icons8.com/color/48/blender-3d.png" alt="Blender" title="Blender" style="height: 32px;">
+                        <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Elemental Change Modal -->
+<div class="modal fade" id="modalElemental" tabindex="-1" aria-labelledby="modalElementalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalElementalLabel">Elemental Change</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p> Elemental Change is an action-adventure platform game in which the player takes control of Shin, a 
+                    being created to restore balance to the world, facing challenges in a world divided between the elements 
+                    of Water, Earth, Fire, and Air. Through platforming and skill mechanics, Shin must overcome obstacles, 
+                    unlock elemental abilities, and unleash elemental spirits to restore balance to the world.</p>
+                <p> As Lead Programmer, I was responsible for implementing the game's core programming, which included 
+                    platforming mechanics, character abilities, and enemy AI. I developed the skill system, which allowed 
+                    Shin to use elemental powers to interact with the environment and confront enemies. I was also in 
+                    charge of save point management and puzzle integration, ensuring smooth transitions between levels 
+                    and a consistent gameplay experience with the narrative. I worked closely with the artists and designers 
+                    to ensure the game mechanics were properly integrated with the visual assets.</p>
+                <div id="ecCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/EC/EC1.png" class="d-block w-100 carousel-img" alt="Slide 1" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/EC/EC2.png" class="d-block w-100 carousel-img" alt="Slide 2" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/EC/EC3.png" class="d-block w-100 carousel-img" alt="Slide 3" style="height: 400px; object-fit: fill;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/EC/EC4.png" class="d-block w-100 carousel-img" alt="Slide 4" style="height: 400px; object-fit: fill;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ecCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#ecCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                    <p></p>
+                    <div class="mt-auto gap-3 justify-content-start align-items-center text-center">
+                        <img src="https://img.icons8.com/color/48/unreal-engine.png" alt="Unreal Engine" height="40">
+                        <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Skills</h2>
+
+        <!-- Languages & Frameworks -->
+        <div class="mb-5">
+            <h3 class="mb-4 text-center">Languages & Frameworks</h3>
+            <div class="row row-cols-3 row-cols-md-5 g-4 text-center">
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/?size=100&id=40670&format=png&color=000000" alt="C" height="40">
+                        </div>
+                        <div>C</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/c-sharp-logo.png" alt="C#" height="40">
+                        </div>
+                        <div>C#</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/?size=100&id=40669&format=png&color=000000" alt="C++" height="40">
+                        </div>
+                        <div>C++</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML" height="40">
+                        </div>
+                        <div>HTML</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/css3.png" alt="CSS" height="40">
+                        </div>
+                        <div>CSS</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript" height="40">
+                        </div>
+                        <div>JavaScript</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/?size=100&id=pzBwti6QHuKh&format=png&color=000000" alt="GML" height="40">
+                        </div>
+                        <div>GML</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java" height="40">
+                        </div>
+                        <div>Java</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/dart.png" alt="Dart" height="40">
+                        </div>
+                        <div>Dart</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/postgreesql.png" alt="PostgreSQL" height="40">
+                        </div>
+                        <div>PostgreSQL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Software & Tools -->
+        <div>
+            <h3 class="mb-4 text-center">Software & Tools</h3>
+            <div class="row row-cols-3 row-cols-md-5 g-4 text-center">
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/unity.png" alt="Unity" height="40">
+                        </div>
+                        <div>Unity</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/unreal-engine.png" alt="Unreal Engine" height="40">
+                        </div>
+                        <div>Unreal Engine</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/?size=100&id=pzBwti6QHuKh&format=png&color=000000" alt="GameMaker (placeholder)" height="40">
+                        </div>
+                        <div>GameMaker</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/blender-3d.png" alt="Blender" height="40">
+                        </div>
+                        <div>Blender</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/3ds-max.png" alt="3ds Max" height="40">
+                        </div>
+                        <div>3ds Max</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" height="40">
+                        </div>
+                        <div>GitHub</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/adobe-photoshop--v1.png" alt="Photoshop" height="40">
+                        </div>
+                        <div>Photoshop</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/adobe-illustrator--v1.png" alt="Illustrator" height="40">
+                        </div>
+                        <div>Illustrator</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/adobe-after-effects--v1.png" alt="After Effects" height="40">
+                        </div>
+                        <div>After Effects</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://www.dockhunt.com/_next/image?url=https%3A%2F%2Fdockhunt-images.nyc3.cdn.digitaloceanspaces.com%2F22ba1538-2cb9-4cc4-a73e-80fdcce62e33&w=256&q=75" alt="Substance Painter" height="40">
+                        </div>
+                        <div>Substance Painter</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/adobe-premiere-pro--v1.png" alt="Premiere" height="40">
+                        </div>
+                        <div>Premiere</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/?size=100&id=pNvuBsEVgVCG&format=png&color=000000" alt="Krita (placeholder)" height="40">
+                        </div>
+                        <div>Krita</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/color/48/android-studio--v2.png" alt="Android Studio" height="40">
+                        </div>
+                        <div>Android Studio</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="mb-2">
+                            <img src="https://img.icons8.com/?size=100&id=UE01mCLFBOl4&format=png&color=000000" alt="Rider (placeholder)" height="40">
+                        </div>
+                        <div>Rider</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Academic Section -->
+<section id="Academic" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Academic Background</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-row align-items-center p-1">
+                    <div class=""></div>
+                    <img src="Images/University/Utalca.png" alt="UTalca Logo" style="width: 100px; height: auto;" class="me-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bachelor of Science in Video Game Development and Virtual Reality</h5>
+                        <h6 class="card-text text-center">[Mar 2019 - Sep 2024]</h6>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Degree University of Talca -->
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-row align-items-center p-1">
+                    <p>.</p>
+                    <img src="Images/University/Utalca.png" alt="UTalca Logo" style="width: 100px; height: auto;" class="me-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bachelor’s Degree in Video Game Design and Development</h5>
+                        <h6 class="card-text text-center">[Mar 2019 - Sep 2024]</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Degree University of Girona -->
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-row align-items-center p-1">
+                    <p>.</p>
+                    <img src="Images/University/UDG-Logo-tm.png" alt="UDG Logo" style="width: 100px; height: auto; " class="me-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Degree in Video Game Design and Development | International Exchange</h5>
+                        <h6 class="card-text text-center">[Sep 2022 - Feb 2023]</h6>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Contact</h2>
+        <p class="lead">Email: <a href="mailto:matias.bustos.salazar2001@gmail.com">matias.bustos.salazar2001@gmail.com</a></p>
+        <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/matiasbustossalazar/">Matías Bustos</a></p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Matías Bustos. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
