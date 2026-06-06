@@ -7,11 +7,11 @@ async function loadComponent(id, file) {
     document.getElementById(id).innerHTML = html;
 }
 
-loadComponent("navbar", "Components/navbar.html");
-loadComponent("featured", "Components/featured.html");
-loadComponent("about", "Components/about.html");
-loadComponent("projects", "Components/projects.html");
-loadComponent("experience", "Components/experience.html");
-loadComponent("skills", "Components/skills.html");
-loadComponent("academic", "Components/academic.html");
-loadComponent("modals", "Components/modals.html");
+loadComponent("navbar", "components/navbar.html");
+loadComponent("featured", "components/featured.html");
+loadComponent("about", "components/about.html");
+loadComponent("projects", "components/projects.html");
+loadComponent("experience", "components/experience.html");
+loadComponent("skills", "components/skills.html");
+loadComponent("academic", "components/academic.html");
+loadComponent("modals", "components/modals.html");
